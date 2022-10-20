@@ -5,7 +5,7 @@ main {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 600px;
+    width: 400px;
     margin: auto;
 }
 
@@ -19,6 +19,9 @@ button {
     flex-wrap: wrap;
 }
 
+#dblWide {
+    width: 200px;
+}
 /*
 Determine font and color scheme
 Figure out how to use flexbox or grid to align buttons within container properly
