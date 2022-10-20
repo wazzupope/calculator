@@ -27,6 +27,7 @@ div {
 
 #dblWide {
     width: 200px;
+    background-color: gray;
 }
 
 #display {
@@ -36,6 +37,18 @@ div {
     height: 100px;
     width: 400px;
     margin: auto;
+}
+
+#equality {
+    background-color: orange;
+}
+
+#numbers {
+    background-color: white;
+}
+
+#operators {
+    background-color: silver;
 }
 
 /*
