@@ -7,11 +7,17 @@ main {
     align-items: center;
     width: 400px;
     margin: auto;
+    font-size: 60px;
 }
 
 button {
     width: 100px;
     height: 100px;
+    font-size: 30px;
+}
+
+div {
+    padding: 5px;
 }
 
 #buttons {
@@ -22,6 +28,16 @@ button {
 #dblWide {
     width: 200px;
 }
+
+#display {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    height: 100px;
+    width: 400px;
+    margin: auto;
+}
+
 /*
 Determine font and color scheme
 Figure out how to use flexbox or grid to align buttons within container properly
