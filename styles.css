@@ -9,6 +9,11 @@ main {
     margin: auto;
 }
 
+button {
+    width: 100px;
+    height: 100px;
+}
+
 /*
 Determine font and color scheme
 Figure out how to use flexbox or grid to align buttons within container properly
