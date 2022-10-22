@@ -14,9 +14,20 @@ function divide(a, b) {
     return a / b;
 }
 
+var plus = false;
+var minus = false;
+var times = false;
+var div = false;
+
+function equals() {
+
+}
+
 /*
 Functions for operators (add, subtract, multiply, divide)
+Function to put answer on display
 Function to clear display
+add event listeners - onclick make that var = true
 Function to "delete" or backspace within display
 Ability to type or click on button in order to make display change
 Create functions that update the display when you click on a button (you should be storing the "display value" in a variable somewhere for use in the next steps)
