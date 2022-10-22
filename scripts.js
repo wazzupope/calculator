@@ -19,8 +19,23 @@ var minus = false;
 var times = false;
 var div = false;
 
-function equals() {
-
+function equals(num1, num2) {
+    switch (true) {
+        case plus:
+            return add(num1, num2);
+            break;
+        case minus:
+            return subtract(num1, num2);
+            break;
+        case times:
+            return multiply(num1, num2);
+            break;
+        case divide:
+            return divide(num1, num2);
+            break;
+        default:
+            break;
+    }
 }
 
 /*
