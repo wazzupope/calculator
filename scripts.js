@@ -1,18 +1,18 @@
 function add(a, b) {
     return a + b;
-}
+};
 
 function subtract(a, b) {
     return a - b;
-}
+};
 
 function multiply(a, b) {
     return a * b;
-}
+};
 
 function divide(a, b) {
     return a / b;
-}
+};
 
 var plus = false;
 var minus = false;
@@ -35,8 +35,8 @@ function equals(num1, num2) {
             break;
         default:
             break;
-    }
-}
+    };
+};
 
 /*
 Functions for operators (add, subtract, multiply, divide)
