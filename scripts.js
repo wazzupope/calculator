@@ -38,7 +38,7 @@ function equals(num1, num2) {
     };
 };
 
-const display = document.querySelector("#display");
+const display = document.querySelector("#readout");
 
 /*
 Functions for operators (add, subtract, multiply, divide)
