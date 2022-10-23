@@ -34,7 +34,7 @@ div {
     justify-content: center;
 }
 
-#dblWide {
+.dblWide {
     width: 210px;
     background-color: gray;
     border-radius: 35px;
@@ -56,11 +56,11 @@ div {
     background-color: orange;
 }
 
-#numbers {
+.numbers {
     background-color: white;
 }
 
-#operators {
+.operators {
     background-color: silver;
 }
 
