@@ -38,6 +38,8 @@ function equals(num1, num2) {
     };
 };
 
+const display = document.querySelector("#display");
+
 /*
 Functions for operators (add, subtract, multiply, divide)
 Function to put answer on display
