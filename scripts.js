@@ -44,6 +44,46 @@ function clear() {
     display.textContent = "";
 }
 
+function zero() {
+    display.textContent + "0";
+}
+
+function one() {
+    display.textContent + "1";
+}
+
+function two() {
+    display.textContent + "2";
+}
+
+function three() {
+    display.textContent + "3";
+}
+
+function four() {
+    display.textContent + "4";
+}
+
+function five() {
+    display.textContent + "5";
+}
+
+function six() {
+    display.textContent + "6";
+}
+
+function seven() {
+    display.textContent + "7";
+}
+
+function eight() {
+    display.textContent + "8";
+}
+
+function nine() {
+    display.textContent + "9";
+}
+
 /*
 Functions for operators (add, subtract, multiply, divide)
 Function to put answer on display
