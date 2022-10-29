@@ -40,6 +40,10 @@ function equals(num1, num2) {
 
 const display = document.querySelector("#readout");
 
+function clear() {
+    display.textContent = "";
+}
+
 /*
 Functions for operators (add, subtract, multiply, divide)
 Function to put answer on display
