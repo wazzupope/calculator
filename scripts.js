@@ -90,7 +90,9 @@ function period() {
 
 function back() {
     let stringArray = display.textContent.split("");
-    return stringArray.slice(stringArray.length - 1);
+    stringArray = stringArray.slice(stringArray.length - 1);
+    stringArray = stringArray.join("");
+    return stringArray;
 }
 
 /*
