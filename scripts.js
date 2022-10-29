@@ -84,6 +84,10 @@ function nine() {
     display.textContent + "9";
 }
 
+function period() {
+    display.textContent + ".";
+}
+
 /*
 Functions for operators (add, subtract, multiply, divide)
 Function to put answer on display
