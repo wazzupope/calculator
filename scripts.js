@@ -88,6 +88,11 @@ function period() {
     display.textContent + ".";
 }
 
+function back() {
+    let stringArray = display.textContent.split("");
+    return stringArray.slice(stringArray.length - 1);
+}
+
 /*
 Functions for operators (add, subtract, multiply, divide)
 Function to put answer on display
