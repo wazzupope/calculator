@@ -108,12 +108,10 @@ function posNeg() {
 };
 
 /*
-Functions for operators (add, subtract, multiply, divide)
-Function to put answer on display
-Function to clear display
+Set limit on number of characters in display
+Only allow one decimal in display
 add event listeners - onclick make that var = true
-Function to "delete" or backspace within display
-Ability to type or click on button in order to make display change
+Ability to type OR click on button in order to make display change
 Create functions that update the display when you click on a button (you should be storing the "display value" in a variable somewhere for use in the next steps)
 Function "operate" to execute what is on the display when you click enter (takes 2 numbers and then calls one of the above functions on the numbers)
 Make the calculator work! You’ll need to store the first number that is input into the calculator when a user presses an operator,
