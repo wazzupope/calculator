@@ -36,7 +36,7 @@ div {
 
 .wider {
     width: 135px;
-    background-color: gray;
+    background-color: #425A7D;
     border-radius: 35px;
     margin-top: 10px;
 }
@@ -53,7 +53,7 @@ div {
 }
 
 #equality {
-    background-color: orange;
+    background-color: #DF7356;
 }
 
 .numbers {
@@ -61,7 +61,7 @@ div {
 }
 
 .operators {
-    background-color: silver;
+    background-color: #A0C0D6;
 }
 
 /*
