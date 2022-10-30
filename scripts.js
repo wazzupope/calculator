@@ -42,58 +42,70 @@ const display = document.querySelector("#readout");
 
 function clear() {
     display.textContent = "";
-}
+};
 
 function zero() {
     display.textContent + "0";
-}
+};
 
 function one() {
     display.textContent + "1";
-}
+};
 
 function two() {
     display.textContent + "2";
-}
+};
 
 function three() {
     display.textContent + "3";
-}
+};
 
 function four() {
     display.textContent + "4";
-}
+};
 
 function five() {
     display.textContent + "5";
-}
+};
 
 function six() {
     display.textContent + "6";
-}
+};
 
 function seven() {
     display.textContent + "7";
-}
+};
 
 function eight() {
     display.textContent + "8";
-}
+};
 
 function nine() {
     display.textContent + "9";
-}
+};
 
 function period() {
     display.textContent + ".";
-}
+};
 
 function back() {
     let stringArray = display.textContent.split("");
     stringArray = stringArray.slice(stringArray.length - 1);
     stringArray = stringArray.join("");
     return stringArray;
-}
+};
+
+function posNeg() {
+    let letterArray = display.textContent.split("");
+    if (letterArray[0] = "-") {
+        letterArray.shift();
+    }
+    else {
+        letterArray.unshift("-");
+    };
+    letterArray = letterArray.join("");
+    return letterArray;
+};
 
 /*
 Functions for operators (add, subtract, multiply, divide)
