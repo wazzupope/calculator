@@ -41,7 +41,7 @@ div {
     margin-top: 10px;
 }
 
-#display {
+#display, #readout {
     display: flex;
     align-items: center;
     justify-content: flex-end;
