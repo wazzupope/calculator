@@ -110,6 +110,19 @@ function posNeg() {
 /*
 Set limit on number of characters in display
 Only allow one decimal in display
+
+<input type="text" class="decimal" value="" />
+
+$('.decimal').keyup(function(){
+    var val = $(this).val();
+    if(isNaN(val)){
+         val = val.replace(/[^0-9\.]/g,'');
+         if(val.split('.').length>2) 
+             val =val.replace(/\.+$/,"");
+    }
+    $(this).val(val); 
+});
+
 add event listeners - onclick make that var = true
 Ability to type OR click on button in order to make display change
 Create functions that update the display when you click on a button (you should be storing the "display value" in a variable somewhere for use in the next steps)
