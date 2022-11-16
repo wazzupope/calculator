@@ -50,6 +50,7 @@ div {
     width: 430px;
     margin: auto;
     border-radius: 35px;
+    font-family: inherit;
 }
 
 #equality {
@@ -66,4 +67,7 @@ div {
 
 /*
 need to change display/readout styling to make edges look right - use developer tools
+how to get cursor of input text box on right side rather than left
+how to set up font size without left side of readout bumping out to left
+make font of readout bold?
 */
