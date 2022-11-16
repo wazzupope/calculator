@@ -111,6 +111,9 @@ function posNeg() {
 Set limit on number of characters in display
 Only allow one decimal in display
 
+"numbers with or without decimals":
+[-+]?[0-9]*[.,]?[0-9]+
+
 <input type="text" class="decimal" value="" />
 
 $('.decimal').keyup(function(){
