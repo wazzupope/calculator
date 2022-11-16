@@ -107,7 +107,15 @@ function posNeg() {
     return letterArray;
 };
 
+function textButton (button) {
+    let id = button.id;
+    display.textContent + id;
+};
+
 /*
+change all the functions for each button to event listeners instead,
+and make the function that runs point to the textButton function or the corresponding operator function
+
 Set limit on number of characters in display
 Only allow one decimal in display
 
