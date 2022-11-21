@@ -40,15 +40,23 @@ function equals(num1, num2) {
 
 const display = document.querySelector("#readout");
 
-function clear() {
-    display.textContent = "";
+const clear = document.querySelector("#c");
+function runClear() {
+    display.textContent = "0";
 };
+clear.addEventListener("click", runClear);
 
 const zero = document.querySelector("#zero");
-zero.addEventListener("click", textButton);
+function runZero () {
+    display.textContent + "0";
+};
+zero.addEventListener("click", runZero);
 
 const one = document.querySelector("#one");
-one.addEventListener("click", textButton);
+function runOne () {
+    display.textContent + "1";
+};
+one.addEventListener("click", runOne);
 
 const two = document.querySelector("#two");
 two.addEventListener("click", textButton);
