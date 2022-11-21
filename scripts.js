@@ -44,34 +44,34 @@ function clear() {
     display.textContent = "";
 };
 
-const zero = document.querySelector("#0");
+const zero = document.querySelector("#zero");
 zero.addEventListener("click", textButton);
 
-const one = document.querySelector("#1");
+const one = document.querySelector("#one");
 one.addEventListener("click", textButton);
 
-const two = document.querySelector("#2");
+const two = document.querySelector("#two");
 two.addEventListener("click", textButton);
 
-const three = document.querySelector("#3");
+const three = document.querySelector("#three");
 three.addEventListener("click", textButton);
 
-const four = document.querySelector("#4");
+const four = document.querySelector("#four");
 four.addEventListener("click", textButton);
 
-const five = document.querySelector("#5");
+const five = document.querySelector("#five");
 five.addEventListener("click", textButton);
 
-const six = document.querySelector("#6");
+const six = document.querySelector("#six");
 six.addEventListener("click", textButton);
 
-const seven = document.querySelector("#7");
+const seven = document.querySelector("#seven");
 seven.addEventListener("click", textButton);
 
-const eight = document.querySelector("#8");
+const eight = document.querySelector("#eight");
 eight.addEventListener("click", textButton);
 
-const nine = document.querySelector("#9");
+const nine = document.querySelector("#nine");
 nine.addEventListener("click", textButton);
 
 function period() {
