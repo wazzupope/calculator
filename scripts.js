@@ -44,45 +44,35 @@ function clear() {
     display.textContent = "";
 };
 
-function zero() {
-    display.textContent + "0";
-};
+const zero = document.querySelector("#0");
+zero.addEventListener("click", textButton);
 
-function one() {
-    display.textContent + "1";
-};
+const one = document.querySelector("#1");
+one.addEventListener("click", textButton);
 
-function two() {
-    display.textContent + "2";
-};
+const two = document.querySelector("#2");
+two.addEventListener("click", textButton);
 
-function three() {
-    display.textContent + "3";
-};
+const three = document.querySelector("#3");
+three.addEventListener("click", textButton);
 
-function four() {
-    display.textContent + "4";
-};
+const four = document.querySelector("#4");
+four.addEventListener("click", textButton);
 
-function five() {
-    display.textContent + "5";
-};
+const five = document.querySelector("#5");
+five.addEventListener("click", textButton);
 
-function six() {
-    display.textContent + "6";
-};
+const six = document.querySelector("#6");
+six.addEventListener("click", textButton);
 
-function seven() {
-    display.textContent + "7";
-};
+const seven = document.querySelector("#7");
+seven.addEventListener("click", textButton);
 
-function eight() {
-    display.textContent + "8";
-};
+const eight = document.querySelector("#8");
+eight.addEventListener("click", textButton);
 
-function nine() {
-    display.textContent + "9";
-};
+const nine = document.querySelector("#9");
+nine.addEventListener("click", textButton);
 
 function period() {
     display.textContent + ".";
