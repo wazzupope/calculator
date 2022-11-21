@@ -48,50 +48,128 @@ clear.addEventListener("click", runClear);
 
 const zero = document.querySelector("#zero");
 function runZero () {
-    display.textContent + "0";
+    if (display.textContent === "0") {
+        display.textContent = "0";
+    }
+    else {
+        display.textContent += "0";
+    };
 };
 zero.addEventListener("click", runZero);
 
 const one = document.querySelector("#one");
 function runOne () {
-    display.textContent + "1";
+    if (display.textContent === "0") {
+        display.textContent = "1";
+    }
+    else {
+        display.textContent += "1";
+    };
 };
 one.addEventListener("click", runOne);
 
 const two = document.querySelector("#two");
-two.addEventListener("click", textButton);
+function runTwo () {
+    if (display.textContent === "0") {
+        display.textContent = "2";
+    }
+    else {
+        display.textContent += "2";
+    };
+};
+two.addEventListener("click", runTwo);
 
 const three = document.querySelector("#three");
-three.addEventListener("click", textButton);
+function runThree () {
+    if (display.textContent === "0") {
+        display.textContent = "3";
+    }
+    else {
+        display.textContent += "3";
+    };
+};
+three.addEventListener("click", runThree);
 
 const four = document.querySelector("#four");
-four.addEventListener("click", textButton);
+function runFour () {
+    if (display.textContent === "0") {
+        display.textContent = "4";
+    }
+    else {
+        display.textContent += "4";
+    };
+};
+four.addEventListener("click", runFour);
 
 const five = document.querySelector("#five");
-five.addEventListener("click", textButton);
+function runFive () {
+    if (display.textContent === "0") {
+        display.textContent = "5";
+    }
+    else {
+        display.textContent += "5";
+    };
+};
+five.addEventListener("click", runFive);
 
 const six = document.querySelector("#six");
-six.addEventListener("click", textButton);
+function runSix () {
+    if (display.textContent === "0") {
+        display.textContent = "6";
+    }
+    else {
+        display.textContent += "6";
+    };
+};
+six.addEventListener("click", runSix);
 
 const seven = document.querySelector("#seven");
-seven.addEventListener("click", textButton);
+function runSeven () {
+    if (display.textContent === "0") {
+        display.textContent = "7";
+    }
+    else {
+        display.textContent += "7";
+    };
+};
+seven.addEventListener("click", runSeven);
 
 const eight = document.querySelector("#eight");
-eight.addEventListener("click", textButton);
+function runEight () {
+    if (display.textContent === "0") {
+        display.textContent = "8";
+    }
+    else {
+        display.textContent += "8";
+    };
+};
+eight.addEventListener("click", runEight);
 
 const nine = document.querySelector("#nine");
-nine.addEventListener("click", textButton);
-
-function period() {
-    display.textContent + ".";
+function runNine () {
+    if (display.textContent === "0") {
+        display.textContent = "9";
+    }
+    else {
+        display.textContent += "9";
+    };
 };
+nine.addEventListener("click", runNine);
 
-function back() {
+const period = document.querySelector("#decimal");
+function runPeriod() {
+    display.textContent += ".";
+};
+period.addEventListener("click", runPeriod);
+
+const back = document.querySelector("#back");
+function runBack() {
     let stringArray = display.textContent.split("");
     stringArray = stringArray.slice(stringArray.length - 1);
     stringArray = stringArray.join("");
-    return stringArray;
+    display.textContent = stringArray;
 };
+back.addEventListener("click", runBack);
 
 function posNeg() {
     let letterArray = display.textContent.split("");
