@@ -14,10 +14,10 @@ function divide(a, b) {
     return a / b;
 };
 
-var plus = false;
-var minus = false;
-var times = false;
-var div = false;
+let plus = false;
+let minus = false;
+let times = false;
+let div = false;
 
 function equals(num1, num2) {
     switch (true) {
