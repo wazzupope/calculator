@@ -189,10 +189,11 @@ function textButton (button) {
 };
 
 /*
-change all the functions for each button to event listeners instead,
-and make the function that runs point to the textButton function or the corresponding operator function
+Check logic on back button, which is deleting all except the last digit, rather than vice versa
 
-Set limit on number of characters in display
+is there a way to have a single function to update the display rather than each button having its own?
+
+Set limit on number of characters in display - can this be done without it being an input field?
 Only allow one decimal in display
 
 "numbers with or without decimals":
