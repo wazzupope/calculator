@@ -207,17 +207,19 @@ function runBack() {
 };
 back.addEventListener("click", runBack);
 
+const plusMinus = document.querySelector("#plusMinus");
 function posNeg() {
     let letterArray = display.textContent.split("");
-    if (letterArray[0] = "-") {
+    if (letterArray[0] === "-") {
         letterArray.shift();
     }
     else {
         letterArray.unshift("-");
     };
     letterArray = letterArray.join("");
-    return letterArray;
+    display.textContent = letterArray;
 };
+plusMinus.addEventListener("click", posNeg);
 
 function textButton(button) {
     let id = button.id;
@@ -228,6 +230,8 @@ function textButton(button) {
 in the "TF" functions when an operator is clicked: need to update the variable for first number to equal display.textContent
 then also make sure that the number doesn't go away, but ensure that it is replaced by the new variable when more numbers are entered
 when equals is clicked, likely need that function to make the second number variable equal to the current display.textContent
+
+also need to change strings to numbers somewhere
 
 fix runBack function to change textContent to "0" if deleting the last digit
 
