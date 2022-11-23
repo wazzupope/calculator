@@ -225,6 +225,10 @@ function textButton(button) {
 };
 
 /*
+in the "TF" functions when an operator is clicked: need to update the variable for first number to equal display.textContent
+then also make sure that the number doesn't go away, but ensure that it is replaced by the new variable when more numbers are entered
+when equals is clicked, likely need that function to make the second number variable equal to the current display.textContent
+
 Check logic on back button, which is deleting all except the last digit, rather than vice versa
 
 is there a way to have a single function to update the display rather than each button having its own?
