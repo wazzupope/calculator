@@ -19,6 +19,42 @@ let minus = false;
 let times = false;
 let div = false;
 
+let addition = document.querySelector("#add");
+function addTF() {
+    plus = true;
+    minus = false;
+    times = false;
+    div = false;
+};
+addition.addEventListener("click", addTF);
+
+let subtraction = document.querySelector("#subtract");
+function subtractTF() {
+    plus = false;
+    minus = true;
+    times = false;
+    div = false;
+};
+subtraction.addEventListener("click", subtractTF);
+
+let multiplication = document.querySelector("#multiply");
+function multiplyTF() {
+    plus = false;
+    minus = true;
+    times = true;
+    div = false;
+};
+multiplication.addEventListener("click", multiplyTF);
+
+let division = document.querySelector("#divide");
+function divideTF() {
+    plus = false;
+    minus = true;
+    times = false;
+    div = true;
+};
+division.addEventListener("click", divideTF);
+
 function equals(num1, num2) {
     switch (true) {
         case plus:
@@ -30,7 +66,7 @@ function equals(num1, num2) {
         case times:
             return multiply(num1, num2);
             break;
-        case divide:
+        case div:
             return divide(num1, num2);
             break;
         default:
@@ -47,7 +83,7 @@ function runClear() {
 clear.addEventListener("click", runClear);
 
 const zero = document.querySelector("#zero");
-function runZero () {
+function runZero() {
     if (display.textContent === "0") {
         display.textContent = "0";
     }
@@ -58,7 +94,7 @@ function runZero () {
 zero.addEventListener("click", runZero);
 
 const one = document.querySelector("#one");
-function runOne () {
+function runOne() {
     if (display.textContent === "0") {
         display.textContent = "1";
     }
@@ -69,7 +105,7 @@ function runOne () {
 one.addEventListener("click", runOne);
 
 const two = document.querySelector("#two");
-function runTwo () {
+function runTwo() {
     if (display.textContent === "0") {
         display.textContent = "2";
     }
@@ -80,7 +116,7 @@ function runTwo () {
 two.addEventListener("click", runTwo);
 
 const three = document.querySelector("#three");
-function runThree () {
+function runThree() {
     if (display.textContent === "0") {
         display.textContent = "3";
     }
@@ -91,7 +127,7 @@ function runThree () {
 three.addEventListener("click", runThree);
 
 const four = document.querySelector("#four");
-function runFour () {
+function runFour() {
     if (display.textContent === "0") {
         display.textContent = "4";
     }
@@ -102,7 +138,7 @@ function runFour () {
 four.addEventListener("click", runFour);
 
 const five = document.querySelector("#five");
-function runFive () {
+function runFive() {
     if (display.textContent === "0") {
         display.textContent = "5";
     }
@@ -113,7 +149,7 @@ function runFive () {
 five.addEventListener("click", runFive);
 
 const six = document.querySelector("#six");
-function runSix () {
+function runSix() {
     if (display.textContent === "0") {
         display.textContent = "6";
     }
@@ -124,7 +160,7 @@ function runSix () {
 six.addEventListener("click", runSix);
 
 const seven = document.querySelector("#seven");
-function runSeven () {
+function runSeven() {
     if (display.textContent === "0") {
         display.textContent = "7";
     }
@@ -135,7 +171,7 @@ function runSeven () {
 seven.addEventListener("click", runSeven);
 
 const eight = document.querySelector("#eight");
-function runEight () {
+function runEight() {
     if (display.textContent === "0") {
         display.textContent = "8";
     }
@@ -146,7 +182,7 @@ function runEight () {
 eight.addEventListener("click", runEight);
 
 const nine = document.querySelector("#nine");
-function runNine () {
+function runNine() {
     if (display.textContent === "0") {
         display.textContent = "9";
     }
@@ -183,7 +219,7 @@ function posNeg() {
     return letterArray;
 };
 
-function textButton (button) {
+function textButton(button) {
     let id = button.id;
     display.textContent + id;
 };
