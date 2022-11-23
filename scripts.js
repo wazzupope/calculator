@@ -201,7 +201,7 @@ period.addEventListener("click", runPeriod);
 const back = document.querySelector("#back");
 function runBack() {
     let stringArray = display.textContent.split("");
-    stringArray = stringArray.slice(stringArray.length - 1);
+    stringArray = stringArray.slice(0, (stringArray.length - 1));
     stringArray = stringArray.join("");
     display.textContent = stringArray;
 };
@@ -229,7 +229,7 @@ in the "TF" functions when an operator is clicked: need to update the variable f
 then also make sure that the number doesn't go away, but ensure that it is replaced by the new variable when more numbers are entered
 when equals is clicked, likely need that function to make the second number variable equal to the current display.textContent
 
-Check logic on back button, which is deleting all except the last digit, rather than vice versa
+fix runBack function to change textContent to "0" if deleting the last digit
 
 is there a way to have a single function to update the display rather than each button having its own?
 
