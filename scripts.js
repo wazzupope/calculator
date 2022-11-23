@@ -238,8 +238,6 @@ when equals is clicked, likely need that function to make the second number vari
 
 also need to change strings to numbers somewhere
 
-fix runBack function to change textContent to "0" if deleting the last digit
-
 is there a way to have a single function to update the display rather than each button having its own?
 
 Set limit on number of characters in display - can this be done without it being an input field?
