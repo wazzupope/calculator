@@ -200,10 +200,15 @@ period.addEventListener("click", runPeriod);
 
 const back = document.querySelector("#back");
 function runBack() {
-    let stringArray = display.textContent.split("");
-    stringArray = stringArray.slice(0, (stringArray.length - 1));
-    stringArray = stringArray.join("");
-    display.textContent = stringArray;
+    if (display.textContent.length === 1) {
+        display.textContent = "0";
+    }
+    else {
+        let stringArray = display.textContent.split("");
+        stringArray = stringArray.slice(0, (stringArray.length - 1));
+        stringArray = stringArray.join("");
+        display.textContent = stringArray;
+    };
 };
 back.addEventListener("click", runBack);
 
