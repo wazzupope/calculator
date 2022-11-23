@@ -24,10 +24,6 @@ button {
     margin: 5px;
 }
 
-div {
-    padding: 5px;
-}
-
 #buttons {
     display: flex;
     flex-wrap: wrap;
