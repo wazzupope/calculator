@@ -241,6 +241,11 @@ also need to change strings to numbers somewhere
 is there a way to have a single function to update the display rather than each button having its own?
 
 Set limit on number of characters in display - can this be done without it being an input field?
+if (display.textContent.length === 12) {
+    return?
+    display.textContent = display.textContent?
+}
+
 Only allow one decimal in display
 
 "numbers with or without decimals":
