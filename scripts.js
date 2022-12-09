@@ -1,3 +1,6 @@
+let num1 = "";
+let num2 = "";
+
 function add(a, b) {
     return a + b;
 };
@@ -25,6 +28,7 @@ function addTF() {
     minus = false;
     times = false;
     div = false;
+    num1 = display.textContent;
 };
 addition.addEventListener("click", addTF);
 
@@ -34,6 +38,7 @@ function subtractTF() {
     minus = true;
     times = false;
     div = false;
+    num1 = display.textContent;
 };
 subtraction.addEventListener("click", subtractTF);
 
@@ -43,6 +48,7 @@ function multiplyTF() {
     minus = true;
     times = true;
     div = false;
+    num1 = display.textContent;
 };
 multiplication.addEventListener("click", multiplyTF);
 
@@ -52,10 +58,12 @@ function divideTF() {
     minus = true;
     times = false;
     div = true;
+    num1 = display.textContent;
 };
 division.addEventListener("click", divideTF);
 
-function equals(num1, num2) {
+function equals() {
+    num2 = display.textContent;
     switch (true) {
         case plus:
             return add(num1, num2);
@@ -247,6 +255,8 @@ if (display.textContent.length === 12) {
 }
 
 Only allow one decimal in display
+
+use textContent.includes(".") to determine if there is a decimal, then create action off of that
 
 "numbers with or without decimals":
 [-+]?[0-9]*[.,]?[0-9]+
