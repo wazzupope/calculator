@@ -22,48 +22,54 @@ let minus = false;
 let times = false;
 let div = false;
 
-let addition = document.querySelector("#add");
+const addition = document.querySelector("#add");
 function addTF() {
     plus = true;
     minus = false;
     times = false;
     div = false;
     num1 = display.textContent;
+    memory.textContent = display.textContent + " + ";
 };
 addition.addEventListener("click", addTF);
 
-let subtraction = document.querySelector("#subtract");
+const subtraction = document.querySelector("#subtract");
 function subtractTF() {
     plus = false;
     minus = true;
     times = false;
     div = false;
     num1 = display.textContent;
+    memory.textContent = display.textContent + " - ";
 };
 subtraction.addEventListener("click", subtractTF);
 
-let multiplication = document.querySelector("#multiply");
+const multiplication = document.querySelector("#multiply");
 function multiplyTF() {
     plus = false;
     minus = true;
     times = true;
     div = false;
     num1 = display.textContent;
+    memory.textContent = display.textContent + " x ";
 };
 multiplication.addEventListener("click", multiplyTF);
 
-let division = document.querySelector("#divide");
+const division = document.querySelector("#divide");
 function divideTF() {
     plus = false;
     minus = true;
     times = false;
     div = true;
     num1 = display.textContent;
+    memory.textContent = display.textContent + " / ";
 };
 division.addEventListener("click", divideTF);
 
+const equality = document.querySelector("#equality");
 function equals() {
     num2 = display.textContent;
+    memory.textContent += num2;
     switch (true) {
         case plus:
             return add(num1, num2);
@@ -81,12 +87,15 @@ function equals() {
             break;
     };
 };
+equality.addEventListener("click", equals);
 
 const display = document.querySelector("#readout");
+const memory = document.querySelector("#memory");
 
 const clear = document.querySelector("#c");
 function runClear() {
     display.textContent = "0";
+    memory.textContent = "";
 };
 clear.addEventListener("click", runClear);
 
