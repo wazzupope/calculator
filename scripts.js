@@ -361,22 +361,10 @@ function textButton(button) {
 };
 
 /*
-Need to convert the numbers in display.textContent and ultimately in num1 and num2 to actual numbers and not strings - where to do this?
-
-Need to clear display.textContent after an operator is clicked (if memory.textContent contains an operator, display.textContent equals 0 or "")
-
 How to get rid of redundancy of code for each number button:
 operatorButtons.forEach((button) =>
   button.addEventListener('click', () => setOperation(button.textContent))
 )
-
-in the "TF" functions when an operator is clicked: need to update the variable for first number to equal display.textContent
-then also make sure that the number doesn't go away, but ensure that it is replaced by the new variable when more numbers are entered
-when equals is clicked, likely need that function to make the second number variable equal to the current display.textContent
-
-also need to change strings to numbers somewhere
-
-is there a way to have a single function to update the display rather than each button having its own?
 
 Set limit on number of characters in display - can this be done without it being an input field?
 if (display.textContent.length === 12) {
@@ -384,33 +372,7 @@ if (display.textContent.length === 12) {
     display.textContent = display.textContent?
 }
 
-Only allow one decimal in display
-
-use textContent.includes(".") to determine if there is a decimal, then create action off of that
-
-"numbers with or without decimals":
-[-+]?[0-9]*[.,]?[0-9]+
-
-<input type="text" class="decimal" value="" />
-
-$('.decimal').keyup(function(){
-    var val = $(this).val();
-    if(isNaN(val)){
-         val = val.replace(/[^0-9\.]/g,'');
-         if(val.split('.').length>2) 
-             val =val.replace(/\.+$/,"");
-    }
-    $(this).val(val); 
-});
-
-add event listeners - onclick make that var = true
 Ability to type OR click on button in order to make display change
-Create functions that update the display when you click on a button (you should be storing the "display value" in a variable somewhere for use in the next steps)
-Function "operate" to execute what is on the display when you click enter (takes 2 numbers and then calls one of the above functions on the numbers)
-Make the calculator work! You’ll need to store the first number that is input into the calculator when a user presses an operator,
- and also save which operation has been chosen and then operate() on them when the user presses the “=” key.
-You should already have the code that can populate the display, so once operate() has been called, update the display with the ‘solution’ to the operation.
-This is the hardest part of the project. You need to figure out how to store all the values and call the operate function with them.
- Don’t feel bad if it takes you a while to figure out the logic.
+
 Reference step 6. in TOP instructions for the project from here on out
 */
