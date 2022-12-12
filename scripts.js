@@ -253,6 +253,10 @@ function textButton(button) {
 };
 
 /*
+Need to convert the numbers in display.textContent and ultimately in num1 and num2 to actual numbers and not strings - where to do this?
+
+Need to clear display.textContent after an operator is clicked (if memory.textContent contains an operator, display.textContent equals 0 or "")
+
 in the "TF" functions when an operator is clicked: need to update the variable for first number to equal display.textContent
 then also make sure that the number doesn't go away, but ensure that it is replaced by the new variable when more numbers are entered
 when equals is clicked, likely need that function to make the second number variable equal to the current display.textContent
