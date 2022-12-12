@@ -47,7 +47,7 @@ subtraction.addEventListener("click", subtractTF);
 const multiplication = document.querySelector("#multiply");
 function multiplyTF() {
     plus = false;
-    minus = true;
+    minus = false;
     times = true;
     div = false;
     num1 = display.textContent;
@@ -58,7 +58,7 @@ multiplication.addEventListener("click", multiplyTF);
 const division = document.querySelector("#divide");
 function divideTF() {
     plus = false;
-    minus = true;
+    minus = false;
     times = false;
     div = true;
     num1 = display.textContent;
