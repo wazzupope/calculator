@@ -22,6 +22,9 @@ let minus = false;
 let times = false;
 let div = false;
 
+let resetDisplay = false;
+let clearDisplay = false;
+
 const addition = document.querySelector("#add");
 function addTF() {
     plus = true;
@@ -30,6 +33,7 @@ function addTF() {
     div = false;
     num1 = display.textContent;
     memory.textContent = display.textContent + " + ";
+    resetDisplay = true;
 };
 addition.addEventListener("click", addTF);
 
@@ -41,6 +45,7 @@ function subtractTF() {
     div = false;
     num1 = display.textContent;
     memory.textContent = display.textContent + " - ";
+    resetDisplay = true;
 };
 subtraction.addEventListener("click", subtractTF);
 
@@ -52,6 +57,7 @@ function multiplyTF() {
     div = false;
     num1 = display.textContent;
     memory.textContent = display.textContent + " x ";
+    resetDisplay = true;
 };
 multiplication.addEventListener("click", multiplyTF);
 
@@ -63,25 +69,36 @@ function divideTF() {
     div = true;
     num1 = display.textContent;
     memory.textContent = display.textContent + " / ";
+    resetDisplay = true;
 };
 division.addEventListener("click", divideTF);
 
 const equality = document.querySelector("#equality");
 function equals() {
+    clearDisplay = true;
+    let answer;
     num2 = display.textContent;
     memory.textContent += num2;
     switch (true) {
         case plus:
-            console.log(add(num1, num2));
+            answer = add(Number(num1), Number(num2));
+            display.textContent = answer;
+            memory.textContent += ` = ${answer}`;
             break;
         case minus:
-            console.log(subtract(num1, num2));
+            answer = subtract(Number(num1), Number(num2));
+            display.textContent = answer;
+            memory.textContent += ` = ${answer}`;
             break;
         case times:
-            console.log(multiply(num1, num2));
+            answer = multiply(Number(num1), Number(num2));
+            display.textContent = answer;
+            memory.textContent += ` = ${answer}`;
             break;
         case div:
-            console.log(divide(num1, num2));
+            answer = divide(Number(num1), Number(num2));
+            display.textContent = answer;
+            memory.textContent += ` = ${answer}`;
             break;
         default:
             break;
@@ -100,11 +117,21 @@ function runClear() {
     minus = false;
     times = false;
     div = false;
+    resetDisplay = false;
 };
 clear.addEventListener("click", runClear);
 
 const zero = document.querySelector("#zero");
 function runZero() {
+    if (clearDisplay) {
+        display.textContent = "0";
+        memory.textContent = "";
+        clearDisplay = false;
+    }
+    else if (resetDisplay) {
+        display.textContent = "0";
+        resetDisplay = false;
+    };
     if (display.textContent === "0") {
         display.textContent = "0";
     }
@@ -116,6 +143,15 @@ zero.addEventListener("click", runZero);
 
 const one = document.querySelector("#one");
 function runOne() {
+    if (clearDisplay) {
+        display.textContent = "0";
+        memory.textContent = "";
+        clearDisplay = false;
+    }
+    else if (resetDisplay) {
+        display.textContent = "0";
+        resetDisplay = false;
+    };
     if (display.textContent === "0") {
         display.textContent = "1";
     }
@@ -127,6 +163,15 @@ one.addEventListener("click", runOne);
 
 const two = document.querySelector("#two");
 function runTwo() {
+    if (clearDisplay) {
+        display.textContent = "0";
+        memory.textContent = "";
+        clearDisplay = false;
+    }
+    else if (resetDisplay) {
+        display.textContent = "0";
+        resetDisplay = false;
+    };
     if (display.textContent === "0") {
         display.textContent = "2";
     }
@@ -138,6 +183,15 @@ two.addEventListener("click", runTwo);
 
 const three = document.querySelector("#three");
 function runThree() {
+    if (clearDisplay) {
+        display.textContent = "0";
+        memory.textContent = "";
+        clearDisplay = false;
+    }
+    else if (resetDisplay) {
+        display.textContent = "0";
+        resetDisplay = false;
+    };
     if (display.textContent === "0") {
         display.textContent = "3";
     }
@@ -149,6 +203,15 @@ three.addEventListener("click", runThree);
 
 const four = document.querySelector("#four");
 function runFour() {
+    if (clearDisplay) {
+        display.textContent = "0";
+        memory.textContent = "";
+        clearDisplay = false;
+    }
+    else if (resetDisplay) {
+        display.textContent = "0";
+        resetDisplay = false;
+    };
     if (display.textContent === "0") {
         display.textContent = "4";
     }
@@ -160,6 +223,15 @@ four.addEventListener("click", runFour);
 
 const five = document.querySelector("#five");
 function runFive() {
+    if (clearDisplay) {
+        display.textContent = "0";
+        memory.textContent = "";
+        clearDisplay = false;
+    }
+    else if (resetDisplay) {
+        display.textContent = "0";
+        resetDisplay = false;
+    };
     if (display.textContent === "0") {
         display.textContent = "5";
     }
@@ -171,6 +243,15 @@ five.addEventListener("click", runFive);
 
 const six = document.querySelector("#six");
 function runSix() {
+    if (clearDisplay) {
+        display.textContent = "0";
+        memory.textContent = "";
+        clearDisplay = false;
+    }
+    else if (resetDisplay) {
+        display.textContent = "0";
+        resetDisplay = false;
+    };
     if (display.textContent === "0") {
         display.textContent = "6";
     }
@@ -182,6 +263,15 @@ six.addEventListener("click", runSix);
 
 const seven = document.querySelector("#seven");
 function runSeven() {
+    if (clearDisplay) {
+        display.textContent = "0";
+        memory.textContent = "";
+        clearDisplay = false;
+    }
+    else if (resetDisplay) {
+        display.textContent = "0";
+        resetDisplay = false;
+    };
     if (display.textContent === "0") {
         display.textContent = "7";
     }
@@ -193,6 +283,15 @@ seven.addEventListener("click", runSeven);
 
 const eight = document.querySelector("#eight");
 function runEight() {
+    if (clearDisplay) {
+        display.textContent = "0";
+        memory.textContent = "";
+        clearDisplay = false;
+    }
+    else if (resetDisplay) {
+        display.textContent = "0";
+        resetDisplay = false;
+    };
     if (display.textContent === "0") {
         display.textContent = "8";
     }
@@ -204,6 +303,15 @@ eight.addEventListener("click", runEight);
 
 const nine = document.querySelector("#nine");
 function runNine() {
+    if (clearDisplay) {
+        display.textContent = "0";
+        memory.textContent = "";
+        clearDisplay = false;
+    }
+    else if (resetDisplay) {
+        display.textContent = "0";
+        resetDisplay = false;
+    };
     if (display.textContent === "0") {
         display.textContent = "9";
     }
@@ -256,6 +364,11 @@ function textButton(button) {
 Need to convert the numbers in display.textContent and ultimately in num1 and num2 to actual numbers and not strings - where to do this?
 
 Need to clear display.textContent after an operator is clicked (if memory.textContent contains an operator, display.textContent equals 0 or "")
+
+How to get rid of redundancy of code for each number button:
+operatorButtons.forEach((button) =>
+  button.addEventListener('click', () => setOperation(button.textContent))
+)
 
 in the "TF" functions when an operator is clicked: need to update the variable for first number to equal display.textContent
 then also make sure that the number doesn't go away, but ensure that it is replaced by the new variable when more numbers are entered
