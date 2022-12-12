@@ -96,6 +96,10 @@ const clear = document.querySelector("#c");
 function runClear() {
     display.textContent = "0";
     memory.textContent = "";
+    plus = false;
+    minus = false;
+    times = false;
+    div = false;
 };
 clear.addEventListener("click", runClear);
 
