@@ -72,16 +72,16 @@ function equals() {
     memory.textContent += num2;
     switch (true) {
         case plus:
-            return add(num1, num2);
+            console.log(add(num1, num2));
             break;
         case minus:
-            return subtract(num1, num2);
+            console.log(subtract(num1, num2));
             break;
         case times:
-            return multiply(num1, num2);
+            console.log(multiply(num1, num2));
             break;
         case div:
-            return divide(num1, num2);
+            console.log(divide(num1, num2));
             break;
         default:
             break;
