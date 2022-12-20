@@ -1,5 +1,5 @@
-let num1 = '';
-let num2 = '';
+let num1 = "";
+let num2 = "";
 
 function add(a, b) {
   return a + b;
@@ -25,10 +25,10 @@ let div = false;
 let resetDisplay = false;
 let clearDisplay = false;
 
-const display = document.querySelector('#readout');
-const memory = document.querySelector('#memory');
+const display = document.querySelector("#readout");
+const memory = document.querySelector("#memory");
 
-const addition = document.querySelector('#add');
+const addition = document.querySelector("#add");
 function addTF() {
   plus = true;
   minus = false;
@@ -38,9 +38,9 @@ function addTF() {
   memory.textContent = `${display.textContent} + `;
   resetDisplay = true;
 }
-addition.addEventListener('click', addTF);
+addition.addEventListener("click", addTF);
 
-const subtraction = document.querySelector('#subtract');
+const subtraction = document.querySelector("#subtract");
 function subtractTF() {
   plus = false;
   minus = true;
@@ -50,9 +50,9 @@ function subtractTF() {
   memory.textContent = `${display.textContent} - `;
   resetDisplay = true;
 }
-subtraction.addEventListener('click', subtractTF);
+subtraction.addEventListener("click", subtractTF);
 
-const multiplication = document.querySelector('#multiply');
+const multiplication = document.querySelector("#multiply");
 function multiplyTF() {
   plus = false;
   minus = false;
@@ -62,9 +62,9 @@ function multiplyTF() {
   memory.textContent = `${display.textContent} x `;
   resetDisplay = true;
 }
-multiplication.addEventListener('click', multiplyTF);
+multiplication.addEventListener("click", multiplyTF);
 
-const division = document.querySelector('#divide');
+const division = document.querySelector("#divide");
 function divideTF() {
   plus = false;
   minus = false;
@@ -74,9 +74,9 @@ function divideTF() {
   memory.textContent = `${display.textContent} / `;
   resetDisplay = true;
 }
-division.addEventListener('click', divideTF);
+division.addEventListener("click", divideTF);
 
-const equality = document.querySelector('#equality');
+const equality = document.querySelector("#equality");
 function equals() {
   clearDisplay = true;
   let answer;
@@ -107,231 +107,231 @@ function equals() {
       break;
   }
 }
-equality.addEventListener('click', equals);
+equality.addEventListener("click", equals);
 
-const clear = document.querySelector('#c');
+const clear = document.querySelector("#c");
 function runClear() {
-  display.textContent = '0';
-  memory.textContent = '';
+  display.textContent = "0";
+  memory.textContent = "";
   plus = false;
   minus = false;
   times = false;
   div = false;
   resetDisplay = false;
 }
-clear.addEventListener('click', runClear);
+clear.addEventListener("click", runClear);
 
-const zero = document.querySelector('#zero');
+const zero = document.querySelector("#zero");
 function runZero() {
   if (clearDisplay) {
-    display.textContent = '0';
-    memory.textContent = '';
+    display.textContent = "0";
+    memory.textContent = "";
     clearDisplay = false;
   } else if (resetDisplay) {
-    display.textContent = '0';
+    display.textContent = "0";
     resetDisplay = false;
   }
-  if (display.textContent === '0') {
-    display.textContent = '0';
+  if (display.textContent === "0") {
+    display.textContent = "0";
   } else {
-    display.textContent += '0';
+    display.textContent += "0";
   }
 }
-zero.addEventListener('click', runZero);
+zero.addEventListener("click", runZero);
 
-const one = document.querySelector('#one');
+const one = document.querySelector("#one");
 function runOne() {
   if (clearDisplay) {
-    display.textContent = '0';
-    memory.textContent = '';
+    display.textContent = "0";
+    memory.textContent = "";
     clearDisplay = false;
   } else if (resetDisplay) {
-    display.textContent = '0';
+    display.textContent = "0";
     resetDisplay = false;
   }
-  if (display.textContent === '0') {
-    display.textContent = '1';
+  if (display.textContent === "0") {
+    display.textContent = "1";
   } else {
-    display.textContent += '1';
+    display.textContent += "1";
   }
 }
-one.addEventListener('click', runOne);
+one.addEventListener("click", runOne);
 
-const two = document.querySelector('#two');
+const two = document.querySelector("#two");
 function runTwo() {
   if (clearDisplay) {
-    display.textContent = '0';
-    memory.textContent = '';
+    display.textContent = "0";
+    memory.textContent = "";
     clearDisplay = false;
   } else if (resetDisplay) {
-    display.textContent = '0';
+    display.textContent = "0";
     resetDisplay = false;
   }
-  if (display.textContent === '0') {
-    display.textContent = '2';
+  if (display.textContent === "0") {
+    display.textContent = "2";
   } else {
-    display.textContent += '2';
+    display.textContent += "2";
   }
 }
-two.addEventListener('click', runTwo);
+two.addEventListener("click", runTwo);
 
-const three = document.querySelector('#three');
+const three = document.querySelector("#three");
 function runThree() {
   if (clearDisplay) {
-    display.textContent = '0';
-    memory.textContent = '';
+    display.textContent = "0";
+    memory.textContent = "";
     clearDisplay = false;
   } else if (resetDisplay) {
-    display.textContent = '0';
+    display.textContent = "0";
     resetDisplay = false;
   }
-  if (display.textContent === '0') {
-    display.textContent = '3';
+  if (display.textContent === "0") {
+    display.textContent = "3";
   } else {
-    display.textContent += '3';
+    display.textContent += "3";
   }
 }
-three.addEventListener('click', runThree);
+three.addEventListener("click", runThree);
 
-const four = document.querySelector('#four');
+const four = document.querySelector("#four");
 function runFour() {
   if (clearDisplay) {
-    display.textContent = '0';
-    memory.textContent = '';
+    display.textContent = "0";
+    memory.textContent = "";
     clearDisplay = false;
   } else if (resetDisplay) {
-    display.textContent = '0';
+    display.textContent = "0";
     resetDisplay = false;
   }
-  if (display.textContent === '0') {
-    display.textContent = '4';
+  if (display.textContent === "0") {
+    display.textContent = "4";
   } else {
-    display.textContent += '4';
+    display.textContent += "4";
   }
 }
-four.addEventListener('click', runFour);
+four.addEventListener("click", runFour);
 
-const five = document.querySelector('#five');
+const five = document.querySelector("#five");
 function runFive() {
   if (clearDisplay) {
-    display.textContent = '0';
-    memory.textContent = '';
+    display.textContent = "0";
+    memory.textContent = "";
     clearDisplay = false;
   } else if (resetDisplay) {
-    display.textContent = '0';
+    display.textContent = "0";
     resetDisplay = false;
   }
-  if (display.textContent === '0') {
-    display.textContent = '5';
+  if (display.textContent === "0") {
+    display.textContent = "5";
   } else {
-    display.textContent += '5';
+    display.textContent += "5";
   }
 }
-five.addEventListener('click', runFive);
+five.addEventListener("click", runFive);
 
-const six = document.querySelector('#six');
+const six = document.querySelector("#six");
 function runSix() {
   if (clearDisplay) {
-    display.textContent = '0';
-    memory.textContent = '';
+    display.textContent = "0";
+    memory.textContent = "";
     clearDisplay = false;
   } else if (resetDisplay) {
-    display.textContent = '0';
+    display.textContent = "0";
     resetDisplay = false;
   }
-  if (display.textContent === '0') {
-    display.textContent = '6';
+  if (display.textContent === "0") {
+    display.textContent = "6";
   } else {
-    display.textContent += '6';
+    display.textContent += "6";
   }
 }
-six.addEventListener('click', runSix);
+six.addEventListener("click", runSix);
 
-const seven = document.querySelector('#seven');
+const seven = document.querySelector("#seven");
 function runSeven() {
   if (clearDisplay) {
-    display.textContent = '0';
-    memory.textContent = '';
+    display.textContent = "0";
+    memory.textContent = "";
     clearDisplay = false;
   } else if (resetDisplay) {
-    display.textContent = '0';
+    display.textContent = "0";
     resetDisplay = false;
   }
-  if (display.textContent === '0') {
-    display.textContent = '7';
+  if (display.textContent === "0") {
+    display.textContent = "7";
   } else {
-    display.textContent += '7';
+    display.textContent += "7";
   }
 }
-seven.addEventListener('click', runSeven);
+seven.addEventListener("click", runSeven);
 
-const eight = document.querySelector('#eight');
+const eight = document.querySelector("#eight");
 function runEight() {
   if (clearDisplay) {
-    display.textContent = '0';
-    memory.textContent = '';
+    display.textContent = "0";
+    memory.textContent = "";
     clearDisplay = false;
   } else if (resetDisplay) {
-    display.textContent = '0';
+    display.textContent = "0";
     resetDisplay = false;
   }
-  if (display.textContent === '0') {
-    display.textContent = '8';
+  if (display.textContent === "0") {
+    display.textContent = "8";
   } else {
-    display.textContent += '8';
+    display.textContent += "8";
   }
 }
-eight.addEventListener('click', runEight);
+eight.addEventListener("click", runEight);
 
-const nine = document.querySelector('#nine');
+const nine = document.querySelector("#nine");
 function runNine() {
   if (clearDisplay) {
-    display.textContent = '0';
-    memory.textContent = '';
+    display.textContent = "0";
+    memory.textContent = "";
     clearDisplay = false;
   } else if (resetDisplay) {
-    display.textContent = '0';
+    display.textContent = "0";
     resetDisplay = false;
   }
-  if (display.textContent === '0') {
-    display.textContent = '9';
+  if (display.textContent === "0") {
+    display.textContent = "9";
   } else {
-    display.textContent += '9';
+    display.textContent += "9";
   }
 }
-nine.addEventListener('click', runNine);
+nine.addEventListener("click", runNine);
 
-const period = document.querySelector('#decimal');
+const period = document.querySelector("#decimal");
 function runPeriod() {
-  display.textContent += '.';
+  display.textContent += ".";
 }
-period.addEventListener('click', runPeriod);
+period.addEventListener("click", runPeriod);
 
-const back = document.querySelector('#back');
+const back = document.querySelector("#back");
 function runBack() {
   if (display.textContent.length === 1) {
-    display.textContent = '0';
+    display.textContent = "0";
   } else {
-    let stringArray = display.textContent.split('');
-    stringArray = stringArray.slice(0, (stringArray.length - 1));
-    stringArray = stringArray.join('');
+    let stringArray = display.textContent.split("");
+    stringArray = stringArray.slice(0, stringArray.length - 1);
+    stringArray = stringArray.join("");
     display.textContent = stringArray;
   }
 }
-back.addEventListener('click', runBack);
+back.addEventListener("click", runBack);
 
-const plusMinus = document.querySelector('#plusMinus');
+const plusMinus = document.querySelector("#plusMinus");
 function posNeg() {
-  let letterArray = display.textContent.split('');
-  if (letterArray[0] === '-') {
+  let letterArray = display.textContent.split("");
+  if (letterArray[0] === "-") {
     letterArray.shift();
   } else {
-    letterArray.unshift('-');
+    letterArray.unshift("-");
   }
-  letterArray = letterArray.join('');
+  letterArray = letterArray.join("");
   display.textContent = letterArray;
 }
-plusMinus.addEventListener('click', posNeg);
+plusMinus.addEventListener("click", posNeg);
 /*
 function textButton(button) {
   const { id } = button;
