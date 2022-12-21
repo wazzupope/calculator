@@ -123,6 +123,8 @@ clear.addEventListener("click", runClear);
 
 const zero = document.querySelector("#zero");
 function runZero() {
+  const zeroDisplayLimiter = display.textContent.split('');
+  if (zeroDisplayLimiter.length === 11) return;
   if (clearDisplay) {
     display.textContent = "0";
     memory.textContent = "";
@@ -141,6 +143,8 @@ zero.addEventListener("click", runZero);
 
 const one = document.querySelector("#one");
 function runOne() {
+  const oneDisplayLimiter = display.textContent.split('');
+  if (oneDisplayLimiter.length === 11) return;
   if (clearDisplay) {
     display.textContent = "0";
     memory.textContent = "";
@@ -159,6 +163,8 @@ one.addEventListener("click", runOne);
 
 const two = document.querySelector("#two");
 function runTwo() {
+  const twoDisplayLimiter = display.textContent.split('');
+  if (twoDisplayLimiter.length === 11) return;
   if (clearDisplay) {
     display.textContent = "0";
     memory.textContent = "";
@@ -177,6 +183,8 @@ two.addEventListener("click", runTwo);
 
 const three = document.querySelector("#three");
 function runThree() {
+  const threeDisplayLimiter = display.textContent.split('');
+  if (threeDisplayLimiter.length === 11) return;
   if (clearDisplay) {
     display.textContent = "0";
     memory.textContent = "";
@@ -195,6 +203,8 @@ three.addEventListener("click", runThree);
 
 const four = document.querySelector("#four");
 function runFour() {
+  const fourDisplayLimiter = display.textContent.split('');
+  if (fourDisplayLimiter.length === 11) return;
   if (clearDisplay) {
     display.textContent = "0";
     memory.textContent = "";
@@ -213,6 +223,8 @@ four.addEventListener("click", runFour);
 
 const five = document.querySelector("#five");
 function runFive() {
+  const fiveDisplayLimiter = display.textContent.split('');
+  if (fiveDisplayLimiter.length === 11) return;
   if (clearDisplay) {
     display.textContent = "0";
     memory.textContent = "";
@@ -231,6 +243,8 @@ five.addEventListener("click", runFive);
 
 const six = document.querySelector("#six");
 function runSix() {
+  const sixDisplayLimiter = display.textContent.split('');
+  if (sixDisplayLimiter.length === 11) return;
   if (clearDisplay) {
     display.textContent = "0";
     memory.textContent = "";
@@ -249,6 +263,8 @@ six.addEventListener("click", runSix);
 
 const seven = document.querySelector("#seven");
 function runSeven() {
+  const sevenDisplayLimiter = display.textContent.split('');
+  if (sevenDisplayLimiter.length === 11) return;
   if (clearDisplay) {
     display.textContent = "0";
     memory.textContent = "";
@@ -267,6 +283,8 @@ seven.addEventListener("click", runSeven);
 
 const eight = document.querySelector("#eight");
 function runEight() {
+  const eightDisplayLimiter = display.textContent.split('');
+  if (eightDisplayLimiter.length === 11) return;
   if (clearDisplay) {
     display.textContent = "0";
     memory.textContent = "";
@@ -285,6 +303,8 @@ eight.addEventListener("click", runEight);
 
 const nine = document.querySelector("#nine");
 function runNine() {
+  const nineDisplayLimiter = display.textContent.split('');
+  if (nineDisplayLimiter.length === 11) return;
   if (clearDisplay) {
     display.textContent = "0";
     memory.textContent = "";
@@ -303,6 +323,8 @@ nine.addEventListener("click", runNine);
 
 const period = document.querySelector("#decimal");
 function runPeriod() {
+  const periodDisplayLimiter = display.textContent.split('');
+  if (periodDisplayLimiter.length === 11) return;
   display.textContent += ".";
 }
 period.addEventListener("click", runPeriod);
