@@ -87,22 +87,18 @@ function equals() {
     case plus:
       answer = add(Number(num1), Number(num2));
       display.textContent = answer;
-      memory.textContent += ` = ${answer}`;
       break;
     case minus:
       answer = subtract(Number(num1), Number(num2));
       display.textContent = answer;
-      memory.textContent += ` = ${answer}`;
       break;
     case times:
       answer = multiply(Number(num1), Number(num2));
       display.textContent = answer;
-      memory.textContent += ` = ${answer}`;
       break;
     case div:
       answer = divide(Number(num1), Number(num2));
       display.textContent = answer;
-      memory.textContent += ` = ${answer}`;
       break;
     default:
       break;
