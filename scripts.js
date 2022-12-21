@@ -373,9 +373,7 @@ function posNeg() {
 }
 plusMinus.addEventListener("click", posNeg);
 /*
-put the clearDisplay logic that is used on the number buttons on the period button
-
-create the ability to (after equals has been clicked) click an operator, enter another number, and have it run another successful calculation
+need to edit equals function to not make an error when equals is pressed repeatedly
 
 Ability to type OR click on button in order to make display change
 
