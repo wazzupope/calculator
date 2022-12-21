@@ -357,22 +357,9 @@ function posNeg() {
 }
 plusMinus.addEventListener("click", posNeg);
 /*
-function textButton(button) {
-  const { id } = button;
-  display.textContent + id;
-}
-*/
-/*
-How to get rid of redundancy of code for each number button:
-operatorButtons.forEach((button) =>
-  button.addEventListener('click', () => setOperation(button.textContent))
-)
+remove from memory line the "=" and answer. it's not necessary, as the answer is shown. Plus then you don't have to limit the number of chars
 
-Set limit on number of characters in display - can this be done without it being an input field?
-if (display.textContent.length === 12) {
-    return?
-    display.textContent = display.textContent?
-}
+create the ability to (after equals has been clicked) click an operator, enter another number, and have it run another successful calculation
 
 Ability to type OR click on button in order to make display change
 
