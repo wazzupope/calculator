@@ -30,6 +30,7 @@ const memory = document.querySelector("#memory");
 
 const addition = document.querySelector("#add");
 function addTF() {
+  if (clearDisplay) clearDisplay = false;
   plus = true;
   minus = false;
   times = false;
@@ -42,6 +43,7 @@ addition.addEventListener("click", addTF);
 
 const subtraction = document.querySelector("#subtract");
 function subtractTF() {
+  if (clearDisplay) clearDisplay = false;
   plus = false;
   minus = true;
   times = false;
@@ -54,6 +56,7 @@ subtraction.addEventListener("click", subtractTF);
 
 const multiplication = document.querySelector("#multiply");
 function multiplyTF() {
+  if (clearDisplay) clearDisplay = false;
   plus = false;
   minus = false;
   times = true;
@@ -66,6 +69,7 @@ multiplication.addEventListener("click", multiplyTF);
 
 const division = document.querySelector("#divide");
 function divideTF() {
+  if (clearDisplay) clearDisplay = false;
   plus = false;
   minus = false;
   times = false;
@@ -323,6 +327,14 @@ function runPeriod() {
   if (display.textContent.includes('.')) return;
   const periodDisplayLimiter = display.textContent.split('');
   if (periodDisplayLimiter.length === 11) return;
+  if (clearDisplay) {
+    display.textContent = "0";
+    memory.textContent = "";
+    clearDisplay = false;
+  } else if (resetDisplay) {
+    display.textContent = "0";
+    resetDisplay = false;
+  }
   display.textContent += ".";
 }
 period.addEventListener("click", runPeriod);
@@ -353,7 +365,7 @@ function posNeg() {
 }
 plusMinus.addEventListener("click", posNeg);
 /*
-remove from memory line the "=" and answer. it's not necessary, as the answer is shown. Plus then you don't have to limit the number of chars
+put the clearDisplay logic that is used on the number buttons on the period button
 
 create the ability to (after equals has been clicked) click an operator, enter another number, and have it run another successful calculation
 
