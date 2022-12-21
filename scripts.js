@@ -91,18 +91,26 @@ function equals() {
     case plus:
       answer = add(Number(num1), Number(num2));
       display.textContent = answer;
+      num1 = num2;
+      num2 = "";
       break;
     case minus:
       answer = subtract(Number(num1), Number(num2));
       display.textContent = answer;
+      num1 = num2;
+      num2 = "";
       break;
     case times:
       answer = multiply(Number(num1), Number(num2));
       display.textContent = answer;
+      num1 = num2;
+      num2 = "";
       break;
     case div:
       answer = divide(Number(num1), Number(num2));
       display.textContent = answer;
+      num1 = num2;
+      num2 = "";
       break;
     default:
       break;
