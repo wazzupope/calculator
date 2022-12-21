@@ -78,6 +78,7 @@ division.addEventListener("click", divideTF);
 
 const equality = document.querySelector("#equality");
 function equals() {
+  if ((plus === false) && (minus === false) && (times === false) && (div === false)) return;
   clearDisplay = true;
   let answer;
   num2 = display.textContent;
@@ -323,6 +324,7 @@ nine.addEventListener("click", runNine);
 
 const period = document.querySelector("#decimal");
 function runPeriod() {
+  if (display.textContent.includes('.')) return;
   const periodDisplayLimiter = display.textContent.split('');
   if (periodDisplayLimiter.length === 11) return;
   display.textContent += ".";
