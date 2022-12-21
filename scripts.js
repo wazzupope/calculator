@@ -375,6 +375,8 @@ plusMinus.addEventListener("click", posNeg);
 /*
 need to edit equals function to not make an error when equals is pressed repeatedly
 
+figure out how to limit number of chars in display when answer is given
+
 Ability to type OR click on button in order to make display change
 
 Reference step 6. in TOP instructions for the project from here on out
