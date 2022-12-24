@@ -373,6 +373,11 @@ function posNeg() {
 }
 plusMinus.addEventListener("click", posNeg);
 /*
+How to get rid of redundancy of code for each number button:
+operatorButtons.forEach((button) =>
+  button.addEventListener('click', () => setOperation(button.textContent))
+)
+
 need to edit equals function to not make an error when equals is pressed repeatedly
 
 figure out how to limit number of chars in display when answer is given
