@@ -372,6 +372,7 @@ function posNeg() {
   display.textContent = letterArray;
 }
 plusMinus.addEventListener("click", posNeg);
+
 /*
 How to get rid of redundancy of code for each number button:
 operatorButtons.forEach((button) =>
@@ -380,7 +381,8 @@ operatorButtons.forEach((button) =>
 
 need to edit equals function to not make an error when equals is pressed repeatedly
 
-figure out how to limit number of chars in display when answer is given
+figure out how to limit number of chars in display when answer is given:
+(https://stackoverflow.com/questions/3414916/display-only-10-characters-of-a-long-string)
 
 Ability to type OR click on button in order to make display change
 
