@@ -17,5 +17,3 @@ figure out how to limit number of characterss in display when answer is given
 Ability to type OR click on button in order to make display change
 
 Reference step 6. in TOP instructions for calculator project for any other remaining to-dos
-
-checking if moving repository to new directory worked
